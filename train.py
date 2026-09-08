@@ -9,7 +9,7 @@ from sklearn.metrics import classification_report, roc_auc_score    # to evaluat
 from sklearn.model_selection import train_test_split    # to split the data into train and test sets
 from sklearn.pipeline import Pipeline   # to create a reusable pipeline into one object
 from sklearn.preprocessing import OneHotEncoder      # to convert categorical variables into numerical variables
-
+from sklearn.preprocessing import StandardScaler   # to scale numerical variables
 
 # load and clean the data
 df = pd.read_csv("data/Telco_Churn.csv")
@@ -35,8 +35,8 @@ categorical_cols = [
 preprocessor = ColumnTransformer([
     ("cat", OneHotEncoder(handle_unknown="ignore"),
      categorical_cols),
-     ], remainder="passthrough"
-     )
+     ("num", StandardScaler(), numerical_cols),
+     ])
 
 pipeline = Pipeline([
     ("preprocessor", preprocessor),
