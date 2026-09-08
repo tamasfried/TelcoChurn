@@ -17,7 +17,8 @@ A portfolio project building and deploying a customer churn prediction model end
 
 ## Status
 
-Work in progress. Current stage: baseline model trained (see `train.py`); next up is wrapping it in a FastAPI service.
+Work in progress. 
+Current stage: FastAPI service wraps the trained model (see `main.py`); next up is containerising it with Docker.
 
 - [x] Dataset chosen, project scaffolded
 - [x] Initial data exploration (data cleaning, class balance, feature relationships)
