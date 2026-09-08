@@ -31,10 +31,9 @@ Work in progress. Current stage: exploratory data analysis (see `notebooks/`).
 
 ## Local Setup
 
-\`\`\`bash
+```bash
 git clone https://github.com/tamasfried/TelcoChurn.git
 cd TelcoChurn
 python3 -m venv venv
 source venv/bin/activate   # Windows: .\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-\`\`\`
