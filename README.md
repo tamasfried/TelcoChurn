@@ -22,7 +22,7 @@ Work in progress. Current stage: baseline model trained (see `train.py`); next u
 - [x] Dataset chosen, project scaffolded
 - [x] Initial data exploration (data cleaning, class balance, feature relationships)
 - [x] Baseline model + preprocessing pipeline
-- [ ] FastAPI service
+- [x] FastAPI service
 - [ ] Docker containerisation
 - [ ] Local Kubernetes deployment
 - [ ] Logging/monitoring
