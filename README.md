@@ -29,11 +29,25 @@ Work in progress. Current stage: exploratory data analysis (see `notebooks/`).
 - [ ] CI/CD via GitHub Actions
 - [ ] Live cloud demo
 
-## Local Setup
+
+## Local setup
 
 ```bash
 git clone https://github.com/tamasfried/TelcoChurn.git
 cd TelcoChurn
+```
+
+**🍎 macOS**
+```bash
 python3 -m venv venv
-source venv/bin/activate   # Windows: .\venv\Scripts\Activate.ps1
+source venv/bin/activate
 pip install -r requirements.txt
+```
+
+**🪟 Windows (PowerShell)**
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+```
