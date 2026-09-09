@@ -5,6 +5,7 @@ A portfolio project building and deploying a customer churn prediction model end
 ## Dataset
 
 [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) 
+
 (IBM, via Kaggle) — ~7,000 customers, ~20 mostly categorical features, binary target (`Churn`: Yes/No).
 
 ## Stack
